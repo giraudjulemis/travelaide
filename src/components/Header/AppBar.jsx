@@ -62,7 +62,7 @@ const SearchAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            Travelaide
+            TravelAide
           </Typography>
           <Box display="flex">
             <Typography variant="h6">Explore new places</Typography>
