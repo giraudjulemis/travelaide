@@ -1,7 +1,8 @@
 import React from "react";
+import SearchAppBar from "./AppBar";
 
 const Header = () => {
-  return <h1>Header</h1>;
+  return <SearchAppBar />;
 };
 
 export default Header;
