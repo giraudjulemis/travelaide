@@ -26,9 +26,12 @@ const GridContainer = styled(Grid)(({ theme }) => ({
   overflow: "auto",
 }));
 
-const List = ({ places }) => {
+const List = ({ places, childClicked }) => {
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("restaurants");
+
+  console.log({ childClicked });
+
   return (
     <Container>
       <Typography variant="h4">
