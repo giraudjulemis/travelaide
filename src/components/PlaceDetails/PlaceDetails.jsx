@@ -16,7 +16,11 @@ import Rating from "@mui/material/Rating";
 const defaultImage =
   "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg";
 
-const PlaceDetails = ({ place }) => {
+const PlaceDetails = ({ place, selected, refProp }) => {
+  if (selected) {
+    refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   return (
     <Card elevation={6}>
       <CardMedia
